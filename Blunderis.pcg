@@ -194,6 +194,7 @@ CHARACTERDMNOTES:
 # Kits
 
 # Character Master/Follower
+FOLLOWER:Rook|TYPE:Animal Companion|RACE:COMPANION (BIRD (OWL))|HITDICE:0|FILE:Rook.pcg
 
 # Character Notes Tab
 
