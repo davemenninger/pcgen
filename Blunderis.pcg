@@ -53,16 +53,17 @@ STAT:STR|SCORE:14
 STAT:DEX|SCORE:13
 STAT:CON|SCORE:14
 STAT:INT|SCORE:14
-STAT:WIS|SCORE:17
+STAT:WIS|SCORE:18
 STAT:CHA|SCORE:15
 ALIGN:NG
 RACE:Dwarf
 
 # Character Class(es)
-CLASS:Cleric|LEVEL:3|SKILLPOOL:0
+CLASS:Cleric|LEVEL:4|SKILLPOOL:0
 CLASSABILITIESLEVEL:Cleric=1|HITPOINTS:8|SKILLSGAINED:4|SKILLSREMAINING:0
 CLASSABILITIESLEVEL:Cleric=2|HITPOINTS:4|SKILLSGAINED:4|SKILLSREMAINING:0
 CLASSABILITIESLEVEL:Cleric=3|HITPOINTS:4|SKILLSGAINED:4|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Cleric=4|HITPOINTS:8|PRESTAT:WIS=1|SKILLSGAINED:4|SKILLSREMAINING:0
 
 # Character Experience
 EXPERIENCE:10967
@@ -96,7 +97,7 @@ SKILL:Diplomacy (Perform (Wind Instruments))|OUTPUTORDER:16|
 SKILL:Disguise|OUTPUTORDER:18|
 SKILL:Disguise (Perform (Act))|OUTPUTORDER:19|
 SKILL:Escape Artist|OUTPUTORDER:20|
-SKILL:Fly|OUTPUTORDER:21|
+SKILL:Fly|OUTPUTORDER:21|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]
 SKILL:Fly (Perform (Dance))|OUTPUTORDER:22|
 SKILL:Handle Animal (Perform (Percussion Instruments))|OUTPUTORDER:24|
 SKILL:Handle Animal (Perform (Wind Instruments))|OUTPUTORDER:25|
@@ -111,7 +112,7 @@ SKILL:Knowledge (Nature)|OUTPUTORDER:33|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST
 SKILL:Knowledge (Religion)|OUTPUTORDER:34|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]
 SKILL:Knowledge (Untrained)|OUTPUTORDER:35|
 SKILL:Linguistics|OUTPUTORDER:37|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]|ASSOCIATEDDATA:Gnome
-SKILL:Perception|OUTPUTORDER:38|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:N]
+SKILL:Perception|OUTPUTORDER:38|CLASSBOUGHT:[CLASS:Cleric|RANKS:2.0|COST:1|CLASSSKILL:N]
 SKILL:Perform (Untrained)|OUTPUTORDER:39|
 SKILL:Profession (Untrained)|OUTPUTORDER:40|
 SKILL:Ride|OUTPUTORDER:41|
@@ -119,8 +120,8 @@ SKILL:Samurai Mount|OUTPUTORDER:42|
 SKILL:Sense Motive|OUTPUTORDER:43|
 SKILL:Sense Motive (Perform (Oratory))|OUTPUTORDER:44|
 SKILL:Sense Motive (Perform (Sing))|OUTPUTORDER:45|
-SKILL:Spellcraft|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]
-SKILL:Stealth|OUTPUTORDER:48|
+SKILL:Spellcraft|CLASSBOUGHT:[CLASS:Cleric|RANKS:2.0|COST:1|CLASSSKILL:Y]
+SKILL:Stealth|OUTPUTORDER:48|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:N]
 SKILL:Survival|OUTPUTORDER:49|
 SKILL:Swim|OUTPUTORDER:50|
 SKILL:Untrained Charisma|OUTPUTORDER:51|
@@ -153,7 +154,7 @@ USERPOOL:FEAT|POOLPOINTS:0.0
 ABILITY:Favored Class|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Cleric|TYPE:FavoredClass
 USERPOOL:Favored Class|POOLPOINTS:0.0
 ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Class Bonus ~ Hit Point|APPLIEDTO:,|TYPE:FavoredClassBonus
-ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Class Bonus ~ Skill Rank|APPLIEDTO:Sense Motive|TYPE:FavoredClassBonus
+ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Class Bonus ~ Skill Rank|APPLIEDTO:Sense Motive,Fly|TYPE:FavoredClassBonus
 USERPOOL:Favored Class Bonus|POOLPOINTS:0.0
 ABILITY:Traits|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Trait ~ Devotee of the Green|APPLIEDTO:Knowledge (Nature)|TYPE:Trait.BasicTrait.FaithTrait|DESC:Your faith in the natural world or one of the gods of nature makes it easy for you to pick up on related concepts. You gain a +1 trait bonus on Knowledge (Geography) and Knowledge (Nature) checks, and %1 is always a class skill for you.&pipe;%LIST
 ABILITY:Traits|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Trait ~ Mathematical Prodigy|APPLIEDTO:Knowledge (Arcana)|TYPE:Trait.BasicTrait.MagicTrait|DESC:Mathematics has always come easily for you, and you have always been able to "see the math" in the physical and magical world. You gain a +1 trait bonus on Knowledge (Arcana) and Knowledge (Engineering) checks, and %1 is always a class skill for you.&pipe;%LIST
