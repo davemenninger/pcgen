@@ -59,8 +59,9 @@ ALIGN:NG
 RACE:Dwarf
 
 # Character Class(es)
-CLASS:Cleric|LEVEL:1|SKILLPOOL:0
+CLASS:Cleric|LEVEL:2|SKILLPOOL:0
 CLASSABILITIESLEVEL:Cleric=1|HITPOINTS:8|SKILLSGAINED:4|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Cleric=2|HITPOINTS:4|SKILLSGAINED:4|SKILLSREMAINING:0
 
 # Character Experience
 EXPERIENCE:10967
@@ -86,7 +87,7 @@ SKILL:Bluff (Perform (String Instruments))|OUTPUTORDER:8|
 SKILL:Climb|OUTPUTORDER:9|
 SKILL:Craft (Bows)|OUTPUTORDER:10|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]
 SKILL:Craft (Untrained)|OUTPUTORDER:11|
-SKILL:Diplomacy|OUTPUTORDER:12|
+SKILL:Diplomacy|OUTPUTORDER:12|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]
 SKILL:Diplomacy (Perform (Keyboard Instruments))|OUTPUTORDER:13|
 SKILL:Diplomacy (Perform (Oratory))|OUTPUTORDER:14|
 SKILL:Diplomacy (Perform (String Instruments))|OUTPUTORDER:15|
@@ -98,35 +99,37 @@ SKILL:Fly|OUTPUTORDER:21|
 SKILL:Fly (Perform (Dance))|OUTPUTORDER:22|
 SKILL:Handle Animal (Perform (Percussion Instruments))|OUTPUTORDER:24|
 SKILL:Handle Animal (Perform (Wind Instruments))|OUTPUTORDER:25|
-SKILL:Heal|OUTPUTORDER:26|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Heal|OUTPUTORDER:26|CLASSBOUGHT:[CLASS:Cleric|RANKS:2.0|COST:1|CLASSSKILL:Y]
 SKILL:Intimidate|OUTPUTORDER:27|
 SKILL:Intimidate (Perform (Comedy))|OUTPUTORDER:28|
 SKILL:Intimidate (Perform (Keyboard Instruments))|OUTPUTORDER:29|
 SKILL:Intimidate (Perform (Percussion Instruments))|OUTPUTORDER:30|
-SKILL:Knowledge (Arcana)|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]
-SKILL:Knowledge (Untrained)|OUTPUTORDER:31|
-SKILL:Perception|OUTPUTORDER:33|
-SKILL:Perform (Untrained)|OUTPUTORDER:34|
-SKILL:Profession (Untrained)|OUTPUTORDER:35|
-SKILL:Ride|OUTPUTORDER:36|
-SKILL:Samurai Mount|OUTPUTORDER:37|
-SKILL:Sense Motive|OUTPUTORDER:38|
-SKILL:Sense Motive (Perform (Oratory))|OUTPUTORDER:39|
-SKILL:Sense Motive (Perform (Sing))|OUTPUTORDER:40|
-SKILL:Stealth|OUTPUTORDER:43|
-SKILL:Survival|OUTPUTORDER:44|
-SKILL:Swim|OUTPUTORDER:45|
-SKILL:Untrained Charisma|OUTPUTORDER:46|
-SKILL:Untrained Dexterity|OUTPUTORDER:47|
-SKILL:Untrained Intelligence|OUTPUTORDER:48|
-SKILL:Untrained Strength|OUTPUTORDER:49|
-SKILL:Untrained Wisdom|OUTPUTORDER:50|
+SKILL:Knowledge (Arcana)|OUTPUTORDER:31|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Knowledge (History)|OUTPUTORDER:32|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Knowledge (Nature)|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Knowledge (Untrained)|OUTPUTORDER:33|
+SKILL:Perception|OUTPUTORDER:35|
+SKILL:Perform (Untrained)|OUTPUTORDER:36|
+SKILL:Profession (Untrained)|OUTPUTORDER:37|
+SKILL:Ride|OUTPUTORDER:38|
+SKILL:Samurai Mount|OUTPUTORDER:39|
+SKILL:Sense Motive|OUTPUTORDER:40|
+SKILL:Sense Motive (Perform (Oratory))|OUTPUTORDER:41|
+SKILL:Sense Motive (Perform (Sing))|OUTPUTORDER:42|
+SKILL:Stealth|OUTPUTORDER:45|
+SKILL:Survival|OUTPUTORDER:46|
+SKILL:Swim|OUTPUTORDER:47|
+SKILL:Untrained Charisma|OUTPUTORDER:48|
+SKILL:Untrained Dexterity|OUTPUTORDER:49|
+SKILL:Untrained Intelligence|OUTPUTORDER:50|
+SKILL:Untrained Strength|OUTPUTORDER:51|
+SKILL:Untrained Wisdom|OUTPUTORDER:52|
 SKILL:Untrained ~ Disable Device|OUTPUTORDER:17|
 SKILL:Untrained ~ Handle Animal|OUTPUTORDER:23|
-SKILL:Untrained ~ Linguistics|OUTPUTORDER:32|
-SKILL:Untrained ~ Sleight of Hand|OUTPUTORDER:41|
-SKILL:Untrained ~ Spellcraft|OUTPUTORDER:42|
-SKILL:Untrained ~ Use Magic Device|OUTPUTORDER:51|
+SKILL:Untrained ~ Linguistics|OUTPUTORDER:34|
+SKILL:Untrained ~ Sleight of Hand|OUTPUTORDER:43|
+SKILL:Untrained ~ Spellcraft|OUTPUTORDER:44|
+SKILL:Untrained ~ Use Magic Device|OUTPUTORDER:53|
 
 # Character Languages
 LANGUAGE:Common|LANGUAGE:Dwarven|LANGUAGE:Giant|LANGUAGE:Undercommon
@@ -145,6 +148,7 @@ USERPOOL:FEAT|POOLPOINTS:0.0
 ABILITY:Favored Class|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Cleric|TYPE:FavoredClass
 USERPOOL:Favored Class|POOLPOINTS:0.0
 ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Class Bonus ~ Hit Point|APPLIEDTO:|TYPE:FavoredClassBonus
+ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Class Bonus ~ Skill Rank|APPLIEDTO:Sense Motive|TYPE:FavoredClassBonus
 USERPOOL:Favored Class Bonus|POOLPOINTS:0.0
 ABILITY:Traits|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Trait ~ Devotee of the Green|APPLIEDTO:Knowledge (Nature)|TYPE:Trait.BasicTrait.FaithTrait|DESC:Your faith in the natural world or one of the gods of nature makes it easy for you to pick up on related concepts. You gain a +1 trait bonus on Knowledge (Geography) and Knowledge (Nature) checks, and %1 is always a class skill for you.&pipe;%LIST
 ABILITY:Traits|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Trait ~ Mathematical Prodigy|APPLIEDTO:Knowledge (Arcana)|TYPE:Trait.BasicTrait.MagicTrait|DESC:Mathematics has always come easily for you, and you have always been able to "see the math" in the physical and magical world. You gain a +1 trait bonus on Knowledge (Arcana) and Knowledge (Engineering) checks, and %1 is always a class skill for you.&pipe;%LIST
