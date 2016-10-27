@@ -29,7 +29,7 @@ TABNAME:
 PLAYERNAME:Dave
 HEIGHT:50
 WEIGHT:185
-AGE:0
+AGE:48
 GENDER:Male
 HANDED:Right
 SKINCOLOR:
@@ -59,6 +59,8 @@ ALIGN:NG
 RACE:Dwarf
 
 # Character Class(es)
+CLASS:Cleric|LEVEL:1|SKILLPOOL:0
+CLASSABILITIESLEVEL:Cleric=1|HITPOINTS:8|SKILLSGAINED:4|SKILLSREMAINING:0
 
 # Character Experience
 EXPERIENCE:10967
@@ -73,6 +75,58 @@ TEMPLATESAPPLIED:[NAME:REACH_5]
 REGION:None
 
 # Character Skills
+SKILL:Acrobatics|OUTPUTORDER:1|
+SKILL:Acrobatics (Perform (Dance))|OUTPUTORDER:2|
+SKILL:Appraise|OUTPUTORDER:3|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Bluff|OUTPUTORDER:4|
+SKILL:Bluff (Perform (Act))|OUTPUTORDER:5|
+SKILL:Bluff (Perform (Comedy))|OUTPUTORDER:6|
+SKILL:Bluff (Perform (Sing))|OUTPUTORDER:7|
+SKILL:Bluff (Perform (String Instruments))|OUTPUTORDER:8|
+SKILL:Climb|OUTPUTORDER:9|
+SKILL:Craft (Bows)|OUTPUTORDER:10|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Craft (Untrained)|OUTPUTORDER:11|
+SKILL:Diplomacy|OUTPUTORDER:12|
+SKILL:Diplomacy (Perform (Keyboard Instruments))|OUTPUTORDER:13|
+SKILL:Diplomacy (Perform (Oratory))|OUTPUTORDER:14|
+SKILL:Diplomacy (Perform (String Instruments))|OUTPUTORDER:15|
+SKILL:Diplomacy (Perform (Wind Instruments))|OUTPUTORDER:16|
+SKILL:Disguise|OUTPUTORDER:18|
+SKILL:Disguise (Perform (Act))|OUTPUTORDER:19|
+SKILL:Escape Artist|OUTPUTORDER:20|
+SKILL:Fly|OUTPUTORDER:21|
+SKILL:Fly (Perform (Dance))|OUTPUTORDER:22|
+SKILL:Handle Animal (Perform (Percussion Instruments))|OUTPUTORDER:24|
+SKILL:Handle Animal (Perform (Wind Instruments))|OUTPUTORDER:25|
+SKILL:Heal|OUTPUTORDER:26|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Intimidate|OUTPUTORDER:27|
+SKILL:Intimidate (Perform (Comedy))|OUTPUTORDER:28|
+SKILL:Intimidate (Perform (Keyboard Instruments))|OUTPUTORDER:29|
+SKILL:Intimidate (Perform (Percussion Instruments))|OUTPUTORDER:30|
+SKILL:Knowledge (Arcana)|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Knowledge (Untrained)|OUTPUTORDER:31|
+SKILL:Perception|OUTPUTORDER:33|
+SKILL:Perform (Untrained)|OUTPUTORDER:34|
+SKILL:Profession (Untrained)|OUTPUTORDER:35|
+SKILL:Ride|OUTPUTORDER:36|
+SKILL:Samurai Mount|OUTPUTORDER:37|
+SKILL:Sense Motive|OUTPUTORDER:38|
+SKILL:Sense Motive (Perform (Oratory))|OUTPUTORDER:39|
+SKILL:Sense Motive (Perform (Sing))|OUTPUTORDER:40|
+SKILL:Stealth|OUTPUTORDER:43|
+SKILL:Survival|OUTPUTORDER:44|
+SKILL:Swim|OUTPUTORDER:45|
+SKILL:Untrained Charisma|OUTPUTORDER:46|
+SKILL:Untrained Dexterity|OUTPUTORDER:47|
+SKILL:Untrained Intelligence|OUTPUTORDER:48|
+SKILL:Untrained Strength|OUTPUTORDER:49|
+SKILL:Untrained Wisdom|OUTPUTORDER:50|
+SKILL:Untrained ~ Disable Device|OUTPUTORDER:17|
+SKILL:Untrained ~ Handle Animal|OUTPUTORDER:23|
+SKILL:Untrained ~ Linguistics|OUTPUTORDER:32|
+SKILL:Untrained ~ Sleight of Hand|OUTPUTORDER:41|
+SKILL:Untrained ~ Spellcraft|OUTPUTORDER:42|
+SKILL:Untrained ~ Use Magic Device|OUTPUTORDER:51|
 
 # Character Languages
 LANGUAGE:Common|LANGUAGE:Dwarven|LANGUAGE:Giant|LANGUAGE:Undercommon
@@ -84,18 +138,27 @@ FEATPOOL:0.0
 ABILITY:*LANGBONUS|TYPE:VIRTUAL|CATEGORY:*LANGBONUS|KEY:*LANGBONUS|APPLIEDTO:Undercommon,Giant|TYPE:
 ABILITY:*LANGBONUS|TYPE:VIRTUAL|CATEGORY:*LANGBONUS|KEY:*LANGBONUS|APPLIEDTO:Undercommon,Giant|TYPE:
 USERPOOL:*LANGBONUS|POOLPOINTS:0.0
+ABILITY:Channel Energy|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Cleric ~ Channel Positive Energy|TYPE:ClericClassFeatures.Supernatural.SpecialAttack.ChannelEnergySelection.ChannelEnergy.Channel Energy.Channel Energy Positive.Channel Positive Energy|DESC:You can unleash a wave of positive energy. You must choose to deal %1d%2 points of positive energy damage to undead creatures or to heal living creatures of %1d%2 points of damage. Creatures that take damage from channeled energy receive a DC %3 Will save to halve the damage. You can use this ability %4 times per day.&pipe;ClericChannelPositiveEnergyDice&pipe;ClericChannelPositiveEnergyDieSize&pipe;ClericChannelPositiveEnergyDC&pipe;ClericChannelEnergyTimes
+USERPOOL:Channel Energy|POOLPOINTS:0.0
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Selective Channeling|TYPE:General|DESC:You can choose whom to affect when you channel energy.
+USERPOOL:FEAT|POOLPOINTS:0.0
+ABILITY:Favored Class|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Cleric|TYPE:FavoredClass
+USERPOOL:Favored Class|POOLPOINTS:0.0
+ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Class Bonus ~ Hit Point|APPLIEDTO:|TYPE:FavoredClassBonus
+USERPOOL:Favored Class Bonus|POOLPOINTS:0.0
 ABILITY:Traits|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Trait ~ Devotee of the Green|APPLIEDTO:Knowledge (Nature)|TYPE:Trait.BasicTrait.FaithTrait|DESC:Your faith in the natural world or one of the gods of nature makes it easy for you to pick up on related concepts. You gain a +1 trait bonus on Knowledge (Geography) and Knowledge (Nature) checks, and %1 is always a class skill for you.&pipe;%LIST
 ABILITY:Traits|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Trait ~ Mathematical Prodigy|APPLIEDTO:Knowledge (Arcana)|TYPE:Trait.BasicTrait.MagicTrait|DESC:Mathematics has always come easily for you, and you have always been able to "see the math" in the physical and magical world. You gain a +1 trait bonus on Knowledge (Arcana) and Knowledge (Engineering) checks, and %1 is always a class skill for you.&pipe;%LIST
 USERPOOL:Traits|POOLPOINTS:0.0
 
 # Character Weapon proficiencies
 WEAPONPROF:[WEAPON:Battleaxe|WEAPON:Bayonet|WEAPON:Blowgun|WEAPON:Cestus|WEAPON:Club|WEAPON:Crossbow (Heavy)|WEAPON:Crossbow (Light)|WEAPON:Dagger|WEAPON:Dagger (Chain)|WEAPON:Dagger (Punching)]
-WEAPONPROF:[WEAPON:Dart|WEAPON:Gauntlet|WEAPON:Gauntlet (Spiked)|WEAPON:Grapple|WEAPON:Javelin|WEAPON:Longspear|WEAPON:Mace (Heavy)|WEAPON:Mace (Light)|WEAPON:Mere Club|WEAPON:Morningstar]
-WEAPONPROF:[WEAPON:Pick (Heavy)|WEAPON:Quarterstaff|WEAPON:Rock|WEAPON:Shortspear|WEAPON:Sickle|WEAPON:Sling|WEAPON:Spear|WEAPON:Spear (Boar)|WEAPON:Spells (Ray)|WEAPON:Spells (Touch)]
-WEAPONPROF:[WEAPON:Splash Weapon|WEAPON:Stake|WEAPON:Unarmed Strike|WEAPON:Warhammer]
+WEAPONPROF:[WEAPON:Dart|WEAPON:Gauntlet|WEAPON:Gauntlet (Spiked)|WEAPON:Grapple|WEAPON:Javelin|WEAPON:Longbow|WEAPON:Longspear|WEAPON:Mace (Heavy)|WEAPON:Mace (Light)|WEAPON:Mere Club]
+WEAPONPROF:[WEAPON:Morningstar|WEAPON:Pick (Heavy)|WEAPON:Quarterstaff|WEAPON:Rock|WEAPON:Shortspear|WEAPON:Sickle|WEAPON:Sling|WEAPON:Spear|WEAPON:Spear (Boar)|WEAPON:Spells (Ray)]
+WEAPONPROF:[WEAPON:Spells (Touch)|WEAPON:Splash Weapon|WEAPON:Stake|WEAPON:Unarmed Strike|WEAPON:Warhammer]
 
 # Character Equipment
 MONEY:0
+EQUIPNAME:Outfit (Peasant's)|OUTPUTORDER:0|COST:0.0|WT:2.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Outfit (Peasant's)|DATA:NAME=Outfit (Peasant's)$KEY=Outfit (Peasant_s)$COSTMOD=-0.1]
 EQUIPSET:Default Set|ID:0.1|USETEMPMODS:Y
 CALCEQUIPSET:0.1
 
@@ -105,6 +168,8 @@ CALCEQUIPSET:0.1
 
 # Character Deity/Domain
 DEITY:Erastil|DEITYDOMAINS:[DOMAIN:Animal|DOMAIN:Community|DOMAIN:Good|DOMAIN:Law|DOMAIN:Plant|DOMAIN:Archon Subdomain (Good)|DOMAIN:Archon Subdomain (Law)|DOMAIN:Family Subdomain|DOMAIN:Feather Subdomain|DOMAIN:Fur Subdomain|DOMAIN:Growth Subdomain|DOMAIN:Home Subdomain]|ALIGNALLOW:|DESC:God of farming, hunting, trade, family|DEITYFAVWEAP:[WEAPON:Longbow]|DEITYALIGN:LG
+DOMAIN:Feather Subdomain|DOMAINGRANTS:Add Fly to your list of class skills. In addition, whenever you cast a spell that grants you a fly speed, your maneuverability increases by one step (up to perfect).|SOURCE:[TYPE:PCClass|NAME:Cleric|LEVEL:1]
+DOMAIN:Plant|DOMAINGRANTS:You find solace in the green, can grow defensive thorns, and can communicate with plants.|SOURCE:[TYPE:PCClass|NAME:Cleric|LEVEL:1]
 
 # Character Spells Information
 
@@ -123,7 +188,7 @@ CHARACTERDMNOTES:
 # Character Notes Tab
 
 # Age Set Selections
-AGESET:0:0:0:0:0:0:0:0:0:0
+AGESET:1:0:0:0:0:0:0:0:0:0
 
 # Campaign History
 
