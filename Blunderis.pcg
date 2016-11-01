@@ -239,6 +239,15 @@ DOMAIN:Feather Subdomain|DOMAINGRANTS:Add Fly to your list of class skills. In a
 DOMAIN:Plant|DOMAINGRANTS:You find solace in the green, can grow defensive thorns, and can communicate with plants.|SOURCE:[TYPE:PCClass|NAME:Cleric|LEVEL:1]
 
 # Character Spells Information
+SPELLBOOK:Prepared Spells|TYPE:2
+SPELLNAME:Align Weapon|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:2|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Create Water|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Feather Fall|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:2|SOURCE:[TYPE:DOMAIN|NAME:Feather Subdomain]
+SPELLNAME:Guidance|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Protection from Evil|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:1|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Restoration (Lesser)|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:2|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Sanctuary|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:1|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Summon Monster II|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:2|SOURCE:[TYPE:CLASS|NAME:Cleric]
 
 # Character Description/Bio/History
 CHARACTERBIO:
