@@ -150,6 +150,7 @@ USERPOOL:*LANGBONUS|POOLPOINTS:0.0
 ABILITY:Channel Energy|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Cleric ~ Channel Positive Energy|TYPE:ClericClassFeatures.Supernatural.SpecialAttack.ChannelEnergySelection.ChannelEnergy.Channel Energy.Channel Energy Positive.Channel Positive Energy|DESC:You can unleash a wave of positive energy. You must choose to deal %1d%2 points of positive energy damage to undead creatures or to heal living creatures of %1d%2 points of damage. Creatures that take damage from channeled energy receive a DC %3 Will save to halve the damage. You can use this ability %4 times per day.&pipe;ClericChannelPositiveEnergyDice&pipe;ClericChannelPositiveEnergyDieSize&pipe;ClericChannelPositiveEnergyDC&pipe;ClericChannelEnergyTimes
 USERPOOL:Channel Energy|POOLPOINTS:0.0
 ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Channel Smite|TYPE:Combat|DESC:You can channel your divine energy through your weapon.
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Point-Blank Shot|TYPE:Combat.StormbornBloodline.FeyBloodline|DESC:You are especially accurate when making ranged attacks against close target.
 ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Selective Channeling|TYPE:General|DESC:You can choose whom to affect when you channel energy.
 USERPOOL:FEAT|POOLPOINTS:0.0
 ABILITY:Favored Class|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Cleric|TYPE:FavoredClass
@@ -245,6 +246,7 @@ DOMAIN:Plant|DOMAINGRANTS:You find solace in the green, can grow defensive thorn
 
 # Character Spells Information
 SPELLBOOK:Prepared Spells|TYPE:2
+SPELLBOOK:Shard of Pride|TYPE:4
 SPELLNAME:Align Weapon|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:2|SOURCE:[TYPE:CLASS|NAME:Cleric]
 SPELLNAME:Create Water|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Cleric]
 SPELLNAME:Entangle|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:1|SOURCE:[TYPE:DOMAIN|NAME:Plant]
