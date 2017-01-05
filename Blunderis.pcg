@@ -74,9 +74,10 @@ EXPERIENCETABLE:Medium
 TEMPLATESAPPLIED:[NAME:Creature with Class Levels]
 TEMPLATESAPPLIED:[NAME:FACE_5]
 TEMPLATESAPPLIED:[NAME:REACH_5]
+TEMPLATESAPPLIED:[NAME:Regional Affinity (Five Kings Mountains)]
 
 # Character Region
-REGION:None
+REGION:Five Kings Mountains
 
 # Character Skills
 SKILL:Acrobatics|OUTPUTORDER:1|
@@ -158,6 +159,8 @@ USERPOOL:Favored Class|POOLPOINTS:0.0
 ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Class Bonus ~ Hit Point|APPLIEDTO:,|TYPE:FavoredClassBonus
 ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Class Bonus ~ Skill Rank|APPLIEDTO:Sense Motive,Fly|TYPE:FavoredClassBonus
 USERPOOL:Favored Class Bonus|POOLPOINTS:0.0
+ABILITY:Region of Origin|TYPE:NORMAL|CATEGORY:Background|KEY:Five Kings Mountains|TYPE:Region|DESC:Fractured Dwarven Nation
+USERPOOL:Region of Origin|POOLPOINTS:0.0
 ABILITY:Traits|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Trait ~ Devotee of the Green|APPLIEDTO:Knowledge (Nature)|TYPE:Trait.BasicTrait.FaithTrait|DESC:Your faith in the natural world or one of the gods of nature makes it easy for you to pick up on related concepts. You gain a +1 trait bonus on Knowledge (Geography) and Knowledge (Nature) checks, and %1 is always a class skill for you.&pipe;%LIST
 ABILITY:Traits|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Trait ~ Mathematical Prodigy|APPLIEDTO:Knowledge (Arcana)|TYPE:Trait.BasicTrait.MagicTrait|DESC:Mathematics has always come easily for you, and you have always been able to "see the math" in the physical and magical world. You gain a +1 trait bonus on Knowledge (Arcana) and Knowledge (Engineering) checks, and %1 is always a class skill for you.&pipe;%LIST
 USERPOOL:Traits|POOLPOINTS:0.0
