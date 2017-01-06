@@ -59,9 +59,10 @@ ALIGN:NG
 RACE:Companion (Bird (Owl))
 
 # Character Class(es)
-CLASS:Companion|LEVEL:2|SKILLPOOL:0|SPELLBASE:None|CANCASTPERDAY:
+CLASS:Companion|LEVEL:3|SKILLPOOL:0|SPELLBASE:None|CANCASTPERDAY:
 CLASSABILITIESLEVEL:Companion=1|HITPOINTS:3|SKILLSGAINED:1|SKILLSREMAINING:0
 CLASSABILITIESLEVEL:Companion=2|HITPOINTS:4|SKILLSGAINED:1|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Companion=3|HITPOINTS:0|SKILLSGAINED:1|SKILLSREMAINING:0
 
 # Character Experience
 EXPERIENCE:0
@@ -78,8 +79,56 @@ TEMPLATESAPPLIED:[NAME:Bite 1 (Small)]
 REGION:None
 
 # Character Skills
-SKILL:Fly|CLASSBOUGHT:[CLASS:Companion|RANKS:1.0|COST:1|CLASSSKILL:Y]
-SKILL:Perception|CLASSBOUGHT:[CLASS:Companion|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Acrobatics|OUTPUTORDER:1|
+SKILL:Acrobatics (Perform (Dance))|OUTPUTORDER:2|
+SKILL:Appraise|OUTPUTORDER:3|
+SKILL:Bluff|OUTPUTORDER:4|
+SKILL:Bluff (Perform (Act))|OUTPUTORDER:5|
+SKILL:Bluff (Perform (Comedy))|OUTPUTORDER:6|
+SKILL:Bluff (Perform (Sing))|OUTPUTORDER:7|
+SKILL:Bluff (Perform (String Instruments))|OUTPUTORDER:8|
+SKILL:Climb|OUTPUTORDER:9|
+SKILL:Craft (Untrained)|OUTPUTORDER:10|
+SKILL:Diplomacy|OUTPUTORDER:11|
+SKILL:Diplomacy (Perform (Keyboard Instruments))|OUTPUTORDER:12|
+SKILL:Diplomacy (Perform (Oratory))|OUTPUTORDER:13|
+SKILL:Diplomacy (Perform (String Instruments))|OUTPUTORDER:14|
+SKILL:Diplomacy (Perform (Wind Instruments))|OUTPUTORDER:15|
+SKILL:Disguise|OUTPUTORDER:17|
+SKILL:Disguise (Perform (Act))|OUTPUTORDER:18|
+SKILL:Escape Artist|OUTPUTORDER:19|
+SKILL:Fly|OUTPUTORDER:20|CLASSBOUGHT:[CLASS:Companion|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Fly (Perform (Dance))|OUTPUTORDER:21|
+SKILL:Handle Animal (Perform (Percussion Instruments))|OUTPUTORDER:23|
+SKILL:Handle Animal (Perform (Wind Instruments))|OUTPUTORDER:24|
+SKILL:Heal|OUTPUTORDER:25|
+SKILL:Intimidate|OUTPUTORDER:26|
+SKILL:Intimidate (Perform (Comedy))|OUTPUTORDER:27|
+SKILL:Intimidate (Perform (Keyboard Instruments))|OUTPUTORDER:28|
+SKILL:Intimidate (Perform (Percussion Instruments))|OUTPUTORDER:29|
+SKILL:Knowledge (Untrained)|OUTPUTORDER:30|
+SKILL:Perception|OUTPUTORDER:32|CLASSBOUGHT:[CLASS:Companion|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Perform (Untrained)|OUTPUTORDER:33|
+SKILL:Profession (Untrained)|OUTPUTORDER:34|
+SKILL:Ride|OUTPUTORDER:35|
+SKILL:Samurai Mount|OUTPUTORDER:36|
+SKILL:Sense Motive|OUTPUTORDER:37|
+SKILL:Sense Motive (Perform (Oratory))|OUTPUTORDER:38|
+SKILL:Sense Motive (Perform (Sing))|OUTPUTORDER:39|
+SKILL:Stealth|OUTPUTORDER:42|
+SKILL:Survival|OUTPUTORDER:43|CLASSBOUGHT:[CLASS:Companion|RANKS:1.0|COST:1|CLASSSKILL:N]
+SKILL:Swim|OUTPUTORDER:44|
+SKILL:Untrained Charisma|OUTPUTORDER:45|
+SKILL:Untrained Dexterity|OUTPUTORDER:46|
+SKILL:Untrained Intelligence|OUTPUTORDER:47|
+SKILL:Untrained Strength|OUTPUTORDER:48|
+SKILL:Untrained Wisdom|OUTPUTORDER:49|
+SKILL:Untrained ~ Disable Device|OUTPUTORDER:16|
+SKILL:Untrained ~ Handle Animal|OUTPUTORDER:22|
+SKILL:Untrained ~ Linguistics|OUTPUTORDER:31|
+SKILL:Untrained ~ Sleight of Hand|OUTPUTORDER:40|
+SKILL:Untrained ~ Spellcraft|OUTPUTORDER:41|
+SKILL:Untrained ~ Use Magic Device|OUTPUTORDER:50|
 
 # Character Languages
 
@@ -88,7 +137,8 @@ SKILL:Perception|CLASSBOUGHT:[CLASS:Companion|RANKS:1.0|COST:1|CLASSSKILL:Y]
 FEATPOOL:0.0
 
 # Character Abilities
-ABILITY:Animal Companion Feat|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Animal Companion Feat ~ Diehard|TYPE:AnimalCompanionFeat|DESC:When your hit point total is below 0, but you are not dead, you automatically stabilize. You do not need to make a Constitution check each round to avoid losing additional hit points. You may choose to act as if you were disabled, rather than dying. You must make this decision as soon as you are reduced to negative hit points (even if it isn't your turn). If you do not choose to act as if you were disabled, you immediately fall unconscious. When using this feat, you are staggered. You can take a move action without further injuring yourself, but if you perform any standard action (or any other action deemed as strenuous, including some free actions, such as casting a quickened spell) you take 1 point of damage after completing the act. If your negative hit points are equal to or greater than your Constitution score, you immediately die.
+ABILITY:Animal Companion Feat|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Animal Companion Feat ~ Endurance|TYPE:AnimalCompanionFeat|DESC:You gain a +4 bonus on the following checks and saves&colon; Swim checks made to resist nonlethal damage from exhaustion; Constitution checks made to continue running; Constitution checks made to avoid nonlethal damage from a forced march; Constitution checks made to hold your breath; Constitution checks made to avoid nonlethal damage from starvation or thirst; Fortitude saves made to avoid nonlethal damage from hot or cold environments; and Fortitude saves made to resist damage from suffocation. You may sleep in light or medium armor without becoming fatigued.
+ABILITY:Animal Companion Feat|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Animal Companion Feat ~ Toughness|TYPE:AnimalCompanionFeat|DESC:You gain +%1 hit points.&pipe;max(3,TL)|DESC:You gain +1 hit points whenever you gain a Hit Die (such as when you gain a level).&pipe;PREHD&colon;MIN=3
 USERPOOL:Animal Companion Feat|POOLPOINTS:0.0
 ABILITY:Animal Trick|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Animal Trick ~ Attack|TYPE:AnimalTrick|DESC:The animal attacks apparent enemies. You may point to a particular creature that you wish the animal to attack, and it will comply if able. Normally, an animal will attack only humanoids, monstrous humanoids, giants, or other animals. Teaching an animal to attack all creatures (including such unnatural creatures as undead and aberrations) counts as two tricks.|DESC:Animal will attack all creatures&pipe;PREABILITY&colon;1,CATEGORY=Special Ability,Animal Trick ~ Attack II
 ABILITY:Animal Trick|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Animal Trick ~ Come|TYPE:AnimalTrick|DESC:The animal comes to you, even if it normally would not do so.
@@ -132,7 +182,7 @@ CHARACTERDMNOTES:
 KIT:Companion ~ Bird
 
 # Character Master/Follower
-MASTER:Blunderis|TYPE:Animal Companion|HITDICE:0|FILE:Blunderis.pcg|ADJUSTMENT:0
+MASTER:Blunderis|TYPE:Animal Companion|HITDICE:1|FILE:Blunderis.pcg|ADJUSTMENT:0
 
 # Character Notes Tab
 
